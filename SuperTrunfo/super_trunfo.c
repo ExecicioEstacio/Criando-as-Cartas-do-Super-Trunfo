@@ -38,6 +38,7 @@ typedef struct {
 
     printf("Qual o pib carta1: \n");
     scanf("%f", &carta1.pib);
+    
     fgets(carta1.estado, sizeof(carta1.estado),stdin);
 
     //campos de cadastro carta
@@ -63,7 +64,7 @@ typedef struct {
 
     printf("Qual o pib carta2: \n");
     scanf("%f", &carta2.pib);
-    fgets(carta1.estado, sizeof(carta2.estado),stdin);
+    fgets(carta2.estado, sizeof(carta2.estado),stdin);
 
     //area de visualizacao
 
