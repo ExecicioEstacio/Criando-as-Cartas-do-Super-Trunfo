@@ -71,16 +71,19 @@ typedef struct {
     printf("\ncarta 1: \n");
     printf("\n Estado: %s \n Código: %s \n Cidade: %s \n", carta1.estado, carta1.cód_carta, carta1.nome_cidade);
 
-    printf(" Populacão: %d \n Número Pontos turisticos: %d \n", carta1.populacao, carta1.num_pontos_turisticos);
+    printf(" Populacão: %d \n ", carta1.populacao);
+    printf("Número Pontos turisticos: %d \n", carta1.num_pontos_turisticos);
 
-    printf(" Área: %.2f Km² \n PIB bilhões de reais: %.2f \n", carta1.area_km, carta1.pib);
+    printf(" Área: %.2f Km² \n PIB: %.2f Bilhões de Reais \n", carta1.area_km, carta1.pib);
 
     printf("\ncarta 2: \n");
     printf("\n Estado: %s \n Código: %s \n Cidade: %s \n", carta2.estado, carta2.cód_carta, carta2.nome_cidade);
 
-    printf(" Populacão: %d \n Número Pontos turisticos: %d \n", carta2.populacao, carta2.num_pontos_turisticos);
+    printf(" Populacão: %d \n", carta2.populacao);
+    printf("Número Pontos turisticos: %d \n", carta2.num_pontos_turisticos);
 
-    printf(" Área: %.2f Km² \n PIB bilhões de reais: %.2f \n", carta2.area_km, carta2.pib);
+
+    printf(" Área: %.2f Km² \n PIB: %.2f Bilhões de Reais \n", carta2.area_km, carta2.pib);
     
     return 0;
 }
