@@ -18,7 +18,7 @@ printf("Informe o estado carta1: \n");
 fgets(carta1.estado, sizeof(carta1.estado), stdin);
 
 printf("Digite o codigo da carta1: \n");
-scanf("%49[^\n]", carta1.cód_carta);
+scanf(" %49[^\n]", carta1.cód_carta);
 getchar(); // Limpa o buffer
 
 printf("Nome da cidade carta1: \n");
@@ -42,12 +42,13 @@ scanf("%f", &carta1.pib);
 getchar(); // Limpa o buffer
 
 printf("\n");
+
 // campos de cadastro carta2
-printf("Informe o estado carta2:\n");
+printf("Informe o estado carta2: \n");
 fgets(carta2.estado, sizeof(carta2.estado), stdin);
 
 printf("Digite o codigo da carta2: \n");
-scanf(" %49[^\n]", carta2.cód_carta);
+scanf("%49[^\n]", carta2.cód_carta);
 getchar(); // Limpa o buffer
 
 printf("Nome da cidade carta2: \n");
@@ -75,14 +76,15 @@ getchar(); // Limpa o buffer
 printf("\ncarta 1: \n");
 printf("Estado: %sCódigo: %s\nCidade: %s\n", carta1.estado, carta1.cód_carta, carta1.nome_cidade);
 printf("População: %d\n", carta1.populacao);
-printf("Pontos Turísticos: %d\n", carta1.pontosturisticos);
+printf("Pontos Turísticos: %d \n", carta1.pontosturisticos);
 printf("Área: %.2f Km²\n", carta1.areakm);
 printf("PIB: %.2f Bilhões de Reais\n", carta1.pib);
 
-// carta2
-printf("\ncarta 2: \n");
 getchar();
-printf("\nEstado: %s\n Código: %s\nCidade: %s\n", carta2.estado, carta2.cód_carta, carta2.nome_cidade);
+
+// carta2
+printf("\ncarta 2:\n ");
+printf("\n Estado: %s\nCódigo: %s\nCidade: %s\n", carta2.estado, carta2.cód_carta, carta2.nome_cidade);
 printf("População: %d\n", carta2.populacao);
 printf("Pontos Turísticos: %d\n", carta2.pontosturisticos);
 printf("Área: %.2f Km²\n", carta1.areakm);
